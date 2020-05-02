@@ -3,9 +3,18 @@ from hangman_game import HangmanGame
 from word_creator import LastNameWordGenerator
 from char_inputter import TerminalCharInputter
 
-if __name__ == "__main__":
+
+def main():
     HangmanGame(
         LastNameWordGenerator(),
         TerminalCharInputter(),
         TerminalHangmanDisplay()
     ).play()
+
+
+def init():
+    if __name__ == "__main__":
+        main()
+
+
+init()

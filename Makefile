@@ -6,4 +6,4 @@ test_unit:
 	. venv/bin/activate && pytest tests/unit/
 
 start:
-	. venv/bin/activate && python app/app.py
+	. venv/bin/activate && python app/application.py

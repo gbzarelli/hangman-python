@@ -4,8 +4,11 @@ from hangman_display import HangmanDisplay
 
 
 class HangmanGame(object):
-
     MAX_LIFE = 6
+    STATUS_WAITING = 1
+    STATUS_PLAYING = 2
+    STATUS_LOST = 3
+    STATUS_WIN = 4
 
     def __init__(self, word_generator: WordGenerator, char_inputter: CharInputter, hangman_display: HangmanDisplay):
         self.__secret_word = word_generator.generate()
@@ -13,9 +16,11 @@ class HangmanGame(object):
         self.__hangman_display = hangman_display
         self.__inputted_words = ["_" for _ in range(len(self.__secret_word))]
         self.__typed_chars = set()
+        self.__status = HangmanGame.STATUS_WAITING
 
     def play(self):
         self.__hangman_display.welcome(len(self.__secret_word))
+        self.__status = HangmanGame.STATUS_PLAYING
         win = self.__game_loop()
         self.__hangman_display.result(win, self.__secret_word.capitalize())
 
@@ -41,7 +46,15 @@ class HangmanGame(object):
 
             self.__print_status(current_life)
 
+        if win:
+            self.__status = HangmanGame.STATUS_WIN
+        else:
+            self.__status = HangmanGame.STATUS_LOST
+
         return win
+
+    def status(self) -> int:
+        return self.__status
 
     def __print_status(self, current_life):
         self.__hangman_display.status(self.__inputted_words, self.MAX_LIFE - current_life, current_life)

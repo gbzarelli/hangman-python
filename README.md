@@ -81,7 +81,11 @@ be similar, but the operation is not fully guaranteed.
 - Install game
 
         $ make install
-        
+
+- Run unit tests:
+
+        $ make test_unit
+
 - Run the game
 
         $ make start

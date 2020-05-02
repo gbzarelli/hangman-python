@@ -7,9 +7,11 @@ class HangmanDisplay(ABC):
     def status(self, input_words: list, hits: int, life: int):
         pass
 
+    @abstractmethod
     def welcome(self, secret_word_length):
         pass
 
+    @abstractmethod
     def result(self, win: bool, word: str):
         pass
 
