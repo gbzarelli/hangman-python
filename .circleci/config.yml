@@ -12,8 +12,3 @@ jobs:
       - run:
           command: pytest tests/unit/
           name: Test
-
-workflows:
-  main:
-    jobs:
-      - build-and-test
