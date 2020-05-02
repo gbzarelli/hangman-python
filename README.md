@@ -3,7 +3,7 @@
 ![Stars](https://img.shields.io/github/stars/gbzarelli/hangman-python.svg)
 ![Release Version](https://img.shields.io/github/release/gbzarelli/hangman-python.svg)
 
-# Hangman Game
+# Hangman Game [![CircleCI](https://circleci.com/gh/gbzarelli/hangman-python.svg?style=svg)](https://circleci.com/gh/gbzarelli/hangman-python)
 
 <p align="center">
     <img src="./images/hangman_logo.png" height="150">
