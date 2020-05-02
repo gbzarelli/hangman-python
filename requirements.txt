@@ -7,3 +7,4 @@ pytest-pythonpath==0.7.3
 pytest-sugar==0.9.3
 Faker==4.0.3
 mock==3.0.5
+coveralls==2.0.0

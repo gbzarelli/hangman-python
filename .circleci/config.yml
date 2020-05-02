@@ -19,3 +19,5 @@ jobs:
           name: Generage coverage html
       - store_artifacts:
             path: htmlcov
+      - run:
+          command: coveralls
