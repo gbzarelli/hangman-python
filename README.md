@@ -1,7 +1,15 @@
+![Issues](https://img.shields.io/github/issues/gbzarelli/hangman-python.svg)
+![Forks](https://img.shields.io/github/forks/gbzarelli/hangman-python.svg)
+![Stars](https://img.shields.io/github/stars/gbzarelli/hangman-python.svg)
+![Release Version](https://img.shields.io/github/release/gbzarelli/hangman-python.svg)
+
 # Hangman Game
 
-Welcome to the Hangman Game, this is my first real project in Python.
+<p align="center">
+    <img src="./images/hangman_logo.png" height="150">
+</p>
 
+Welcome to the Hangman Game, this is my first real project in Python.
 
 # Terminal Display
 
