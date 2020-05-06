@@ -4,6 +4,9 @@ from hangman_display import HangmanDisplay
 
 
 class HangmanGame(object):
+    __slots__ = ['__secret_word', '__char_inputter', '__hangman_display', '__inputted_words', '__typed_chars',
+                 '__typed_chars', '__status']
+
     MAX_LIFE = 6
     STATUS_WAITING = 1
     STATUS_PLAYING = 2
