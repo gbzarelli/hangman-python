@@ -2,6 +2,7 @@
 ![Forks](https://img.shields.io/github/forks/gbzarelli/hangman-python.svg)
 ![Stars](https://img.shields.io/github/stars/gbzarelli/hangman-python.svg)
 ![Release Version](https://img.shields.io/github/release/gbzarelli/hangman-python.svg)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/8d9e9f45ae924fce875a6fb4d6ffe80d)](https://app.codacy.com/manual/gbzarelli/hangman-python?utm_source=github.com&utm_medium=referral&utm_content=gbzarelli/hangman-python&utm_campaign=Badge_Grade_Dashboard)
 [![Coverage Status](https://coveralls.io/repos/github/gbzarelli/hangman-python/badge.svg?branch=master)](https://coveralls.io/github/gbzarelli/hangman-python?branch=master)
 
 # Hangman Game [![CircleCI](https://circleci.com/gh/gbzarelli/hangman-python.svg?style=svg)](https://circleci.com/gh/gbzarelli/hangman-python)
